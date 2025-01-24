@@ -62,6 +62,7 @@ EOF
 
 ${PYTHON_TARGET} -m venv venv
 source ./venv/bin/activate
+pip install -U pip
 pip install ansible
 ansible-galaxy install -r requirements.yml
 ansible-playbook --inventory 127.1 playbook.yml
